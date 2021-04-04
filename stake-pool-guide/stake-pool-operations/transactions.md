@@ -35,8 +35,8 @@ Creating a transaction is a process that requires various steps:
 Get the protocol parameters and save them to `protocol.json` with:
 
 ```text
-   cardano-cli query protocol-parameters \
-   --allegra-era \
+cardano-cli query protocol-parameters \
+   --mary-era \
    --testnet-magic 1097911063 \
    --out-file protocol.json
 ```
