@@ -35,8 +35,8 @@ Creating a transaction is a process that requires various steps:
 Get the protocol parameters and save them to `protocol.json` with:
 
 ```text
-   cardano-cli query protocol-parameters \
-   --allegra-era \
+cardano-cli query protocol-parameters \
+   --mary-era \
    --testnet-magic 1097911063 \
    --out-file protocol.json
 ```
@@ -69,7 +69,7 @@ We need the transaction hash and index of the **UTXO** we want to spend:
 
 ```text
 cardano-cli query utxo \
---allegra-era \
+--mary-era \
 --address $(cat payment.addr) \
 --testnet-magic 1097911063
 
